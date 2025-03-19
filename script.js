@@ -17,7 +17,7 @@ async function convertCurrency() { //Función para el llamado y solicitudes de l
         } else {
             document.getElementById('result').innerText = "Moneda no disponible."; //si no mostrar como resultado texto de moneda solicitada no disponible.
         }
-    } catch (error) { //Si hay un error en la conección con la api y la respuesta HTTP de ella, mostrar como resultado un texto diciendo error al obtener la tasa de cambio.
+    } catch (error) { //Si hay un error en la conexión con la api y la respuesta HTTP de ella, mostrar como resultado un texto diciendo error al obtener la tasa de cambio.
         document.getElementById('result').innerText = "Error al obtener la tasa de cambio.";
         console.error("Error:", error); // mostrar error en consola
     }
