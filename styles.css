@@ -1,0 +1,157 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    margin: 0;
+    font-family: Verdana;
+    font-weight: bold;
+    background-image: url('./img/imagen1.jpg'); /* Imagen del cuerpo de la pagina */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilo del header */
+header {
+    background: #007bff3b;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-family: tahoma;
+    
+}
+
+/* Estilos del footer */
+footer {
+    background: #007bff3b;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-family: tahoma;    
+}
+
+/* Estilos del texto del footer */
+footer h4 {
+    margin: 15px;
+    word-spacing: 40px; /* Aumenta el espacio entre palabras */
+}
+
+
+/* División Main para Centrar solo el container dentro del main */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del container */
+/* Estilos Contenedor central, color, espacion, posición, centrar */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; /* posición por encima del contenedor secundario */
+    align-items: center; 
+    text-align: center; 
+}
+
+/* Estilos Contenedor secundario para la imagen de fondo debajo para dar estilo mas atractivo */
+.container-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px; 
+}
+
+/* Estilos Contenedor secundario ubicacioón de la imagen bordes y tamaño */
+.container-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100px; /* Ajusta la altura de la imagen */
+    background-image: url('./img/imagen3.webp'); /* Imagen del contenedor secundario */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    z-index: 0; /* posición debajo del contenedor central*/
+}
+
+
+/* Estilo Selects moneda de cambio, tamaño, espacio, bordes, color, transición al hover */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Estilo hover select al pasar el click sobre el select, cambia el color a un tono mas oscuro */
+select:hover {
+    border-color: #007bff;
+}
+
+/* Estilos Botón, tamaño, margen, espacio, bordes, letra, transición al hover */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #00b7ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Estilo hover botón al pasar el click sobre el boton, cambia el color a un tono mas oscuro */
+button:hover {
+    background: #0099ff;
+}
+
+/* Estilos resultado de cambio de moneda */
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00a2ff;
+}
+/* Estilos icono de cambio de moneda, centrar, y margen de espacio */
+
+.exchange-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+/* Estilos icono imagen de cambio de moneda, tamaño, transición al hover */
+.exchange-icon img {
+    width: 21px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos transform: hover cuando el usuario pasa el mouse sobre la imagen, rotación 180 grados */
+
+.exchange-icon img:hover {
+    transform: rotate(180deg);
+}
+
+

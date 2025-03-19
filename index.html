@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Moneda</h1>
+    </header>
+
+    <main>
+        <div class="container-wrapper">
+            <div class="container">
+                    <select id="fromCurrency" aria-label="Moneda de origen">
+                        <option value="COP">Peso Colombiano (COP)</option>
+                        <option value="USD">Dólar Estadounidense (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="GBP">Libra Esterlina (GBP)</option>
+                        <option value="JPY">Yen Japonés (JPY)</option>
+                        <option value="CNY">Yuan Chino (CNY)</option>
+                        <option value="MXN">Peso Mexicano (MXN)</option>
+                        <option value="BRL">Real Brasileño (BRL)</option>
+                        <option value="ARS">Peso Argentino (ARS)</option>
+                        <option value="CHF">Franco Suizo (CHF)</option>
+                        <option value="AUD">Dólar Australiano (AUD)</option>
+                        <option value="CAD">Dólar Canadiense (CAD)</option>
+                        <option value="NZD">Dólar Neozelandés (NZD)</option>
+                        <option value="RUB">Rublo Ruso (RUB)</option>
+                        <option value="INR">Rupia India (INR)</option>
+                        <option value="KRW">Won Surcoreano (KRW)</option>
+                        <option value="TRY">Lira Turca (TRY)</option>
+                        <option value="ZAR">Rand Sudafricano (ZAR)</option>
+                        <option value="SEK">Corona Sueca (SEK)</option>
+                        <option value="NOK">Corona Noruega (NOK)</option>
+                    </select>
+                
+                    <div class="exchange-icon">
+                        <img src="./img/exchange.png" alt="Intercambiar">
+                    </div>
+                
+                    <select id="toCurrency" aria-label="Moneda de destino">
+                        <option value="COP">Peso Colombiano (COP)</option>
+                        <option value="USD">Dólar Estadounidense (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="GBP">Libra Esterlina (GBP)</option>
+                        <option value="JPY">Yen Japonés (JPY)</option>
+                        <option value="CNY">Yuan Chino (CNY)</option>
+                        <option value="MXN">Peso Mexicano (MXN)</option>
+                        <option value="BRL">Real Brasileño (BRL)</option>
+                        <option value="ARS">Peso Argentino (ARS)</option>
+                        <option value="CHF">Franco Suizo (CHF)</option>
+                        <option value="AUD">Dólar Australiano (AUD)</option>
+                        <option value="CAD">Dólar Canadiense (CAD)</option>
+                        <option value="NZD">Dólar Neozelandés (NZD)</option>
+                        <option value="RUB">Rublo Ruso (RUB)</option>
+                        <option value="INR">Rupia India (INR)</option>
+                        <option value="KRW">Won Surcoreano (KRW)</option>
+                        <option value="TRY">Lira Turca (TRY)</option>
+                        <option value="ZAR">Rand Sudafricano (ZAR)</option>
+                        <option value="SEK">Corona Sueca (SEK)</option>
+                        <option value="NOK">Corona Noruega (NOK)</option>
+                    </select>
+                
+                    <button onclick="convertCurrency()">Convertir</button>
+                    <p id="result"></p>
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>COP USD EUR GBP JPY CNY MXN BRL ARS CHF AUD CAD NZD RUB INR KRW </h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
